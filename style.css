@@ -1,1 +1,833 @@
+/* ===========================================================
+   ThreatShield AI Legal Center
+   Premium Design System v1.0
+   =========================================================== */
 
+:root{
+
+    --primary:#2563EB;
+    --primary-light:#3B82F6;
+
+    --background:#FFFFFF;
+    --surface:#FAFAFA;
+
+    --text:#111827;
+    --secondary:#6B7280;
+
+    --border:#E5E7EB;
+
+    --radius:24px;
+
+    --shadow:
+        0 10px 35px rgba(0,0,0,.08);
+
+    --transition:.30s ease;
+
+    --max-width:1180px;
+
+}
+
+/* =========================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:
+    Inter,
+    "SF Pro Display",
+    "Segoe UI",
+    Roboto,
+    Arial,
+    sans-serif;
+
+    line-height:1.75;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+/* =========================================================== */
+
+.container{
+
+    width:min(92%,var(--max-width));
+
+    margin:auto;
+
+}
+
+/* =========================================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+    transition:var(--transition);
+
+}
+
+button{
+
+    font:inherit;
+
+}
+
+/* =========================================================== */
+
+section{
+
+    padding:90px 0;
+
+}
+
+h1{
+
+    font-size:58px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+}
+
+h2{
+
+    font-size:40px;
+
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+p{
+
+    color:var(--secondary);
+
+    font-size:17px;
+
+}
+
+/* =========================================================== */
+
+.section-header{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:auto auto 70px;
+
+}
+
+.section-header h2{
+
+    margin:18px 0;
+
+}
+
+.section-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    border:1px solid var(--border);
+
+    background:#F8FAFC;
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:14px;
+
+}
+/* ===========================================================
+   HEADER
+=========================================================== */
+
+.header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:rgba(255,255,255,.92);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid #ECECEC;
+
+}
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    min-height:82px;
+
+}
+
+/* ===========================================================
+   BRAND
+=========================================================== */
+
+.brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+}
+
+.logo{
+
+    width:54px;
+
+    height:54px;
+
+    object-fit:contain;
+
+}
+
+.brand h2{
+
+    font-size:22px;
+
+    color:#111827;
+
+    margin-bottom:4px;
+
+}
+
+.brand p{
+
+    font-size:14px;
+
+    color:#6B7280;
+
+}
+
+/* ===========================================================
+   NAVIGATION
+=========================================================== */
+
+nav{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+nav a{
+
+    color:#374151;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    padding:10px 18px;
+
+    border-radius:999px;
+
+    transition:.30s;
+
+}
+
+nav a:hover{
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+}
+
+/* ===========================================================
+   HERO
+=========================================================== */
+
+.hero{
+
+    padding:120px 0 90px;
+
+}
+
+.hero-content{
+
+    max-width:860px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    background:#EFF6FF;
+
+    color:#2563EB;
+
+    font-weight:700;
+
+    margin-bottom:28px;
+
+}
+
+.hero h1{
+
+    margin-bottom:28px;
+
+}
+
+.hero p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    font-size:19px;
+
+    line-height:1.9;
+
+}
+
+/* ===========================================================
+   HERO BUTTONS
+=========================================================== */
+
+.hero-buttons{
+
+    margin-top:42px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+    background:#2563EB;
+
+    color:#FFFFFF;
+
+    padding:16px 34px;
+
+    border-radius:18px;
+
+    font-weight:700;
+
+    box-shadow:
+    0 14px 30px rgba(37,99,235,.25);
+
+}
+
+.primary-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-btn{
+
+    border:1px solid #D1D5DB;
+
+    background:#FFFFFF;
+
+    color:#111827;
+
+    padding:16px 34px;
+
+    border-radius:18px;
+
+    font-weight:700;
+
+}
+
+.secondary-btn:hover{
+
+    border-color:#2563EB;
+
+    color:#2563EB;
+
+}
+/* ===========================================================
+   HIGHLIGHT CARDS
+=========================================================== */
+
+.highlights{
+
+    padding-top:30px;
+
+}
+
+.highlights .container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.highlight-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:34px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+    transition:.30s ease;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(37,99,235,.12);
+
+    border-color:#BFDBFE;
+
+}
+
+.highlight-card h3{
+
+    margin-bottom:16px;
+
+    color:#111827;
+
+}
+
+.highlight-card p{
+
+    color:#6B7280;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   LEGAL SECTION
+=========================================================== */
+
+.legal-section{
+
+    padding:90px 0;
+
+}
+
+.legal-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E5E7EB;
+
+    border-radius:24px;
+
+    padding:34px;
+
+    margin-bottom:26px;
+
+    box-shadow:0 10px 30px rgba(15,23,42,.05);
+
+    transition:.30s;
+
+}
+
+.legal-card:hover{
+
+    border-color:#BFDBFE;
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 40px rgba(37,99,235,.10);
+
+}
+
+.legal-card h3{
+
+    margin-bottom:18px;
+
+    color:#111827;
+
+}
+
+.legal-card p{
+
+    margin-bottom:16px;
+
+    color:#4B5563;
+
+}
+
+.legal-card ul{
+
+    margin-left:22px;
+
+    color:#4B5563;
+
+}
+
+.legal-card li{
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================================================
+   FOOTER
+=========================================================== */
+
+footer{
+
+    background:#F8FAFC;
+
+    border-top:1px solid #E5E7EB;
+
+    padding:60px 20px;
+
+    text-align:center;
+
+}
+
+footer h3{
+
+    margin-bottom:12px;
+
+}
+
+footer p{
+
+    margin-top:8px;
+
+    color:#6B7280;
+
+}
+/* ===========================================================
+   PREMIUM ANIMATIONS
+=========================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero,
+.highlight-card,
+.legal-card{
+
+    animation:fadeUp .7s ease both;
+
+}
+
+.highlight-card:nth-child(2){
+
+    animation-delay:.08s;
+
+}
+
+.highlight-card:nth-child(3){
+
+    animation-delay:.16s;
+
+}
+
+/* ===========================================================
+   SCROLLBAR
+=========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F8FAFC;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#CBD5E1;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#94A3B8;
+
+}
+
+/* ===========================================================
+   SELECTION
+=========================================================== */
+
+::selection{
+
+    background:#DBEAFE;
+
+    color:#111827;
+
+}
+
+/* ===========================================================
+   RESPONSIVE
+=========================================================== */
+
+@media (max-width:992px){
+
+.header .container{
+
+flex-direction:column;
+
+padding:18px 0;
+
+gap:20px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.highlights .container{
+
+grid-template-columns:1fr;
+
+}
+
+.hero{
+
+padding:90px 0 70px;
+
+}
+
+h1{
+
+font-size:44px;
+
+}
+
+h2{
+
+font-size:32px;
+
+}
+
+}
+
+/* =========================================================== */
+
+@media (max-width:768px){
+
+section{
+
+padding:70px 0;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.primary-btn,
+.secondary-btn{
+
+width:100%;
+
+max-width:320px;
+
+text-align:center;
+
+}
+
+.legal-card{
+
+padding:24px;
+
+}
+
+.highlight-card{
+
+padding:24px;
+
+}
+
+.brand{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.logo{
+
+width:64px;
+
+height:64px;
+
+}
+
+}
+
+/* =========================================================== */
+
+@media (max-width:480px){
+
+.container{
+
+width:92%;
+
+}
+
+h1{
+
+font-size:34px;
+
+}
+
+h2{
+
+font-size:28px;
+
+}
+
+h3{
+
+font-size:21px;
+
+}
+
+p{
+
+font-size:16px;
+
+}
+
+nav{
+
+gap:8px;
+
+}
+
+nav a{
+
+padding:10px 14px;
+
+font-size:14px;
+
+}
+
+.section-badge{
+
+font-size:13px;
+
+}
+
+}
+
+/* ===========================================================
+   END
+=========================================================== */
